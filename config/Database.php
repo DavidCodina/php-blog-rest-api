@@ -1,8 +1,4 @@
 <?php
-  //The file is give an capital D (i.e., Database.php).
-  //By convention files that contain a single class are given a name corresponding to that class.
-
-
   class Database {
     //Database Parameters
     private $host     = 'localhost';

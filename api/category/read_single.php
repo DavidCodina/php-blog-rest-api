@@ -19,7 +19,7 @@
 
 
   //Create array
-  $category_arr = array('id'   => $category->id, 'name' => $category->name);
+  $category_arr = array('id' => $category->id, 'name' => $category->name);
 
   //Make JSON
   print_r(json_encode($category_arr));

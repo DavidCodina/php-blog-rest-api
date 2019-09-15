@@ -1,43 +1,6 @@
 <?php
-  //////////////////////////////////////////////////////////////////////////////
-  //
-  //
-  //  class Post (i.e., the Post model) is used in each of the api/post/... files (Controllers ?)
-  //  (Note: this is similar to how Categor.php is used in eachh of the api/categor/... files):
-  //
-  //          api/post/create.php       -   to instantiate blog post object
-  //          api/post/read.php         -   to instantiate blog post object
-  //          api/post/read-single.php  -   to instantiate blog post object
-  //          api/post/update.php       -   to instantiate blog post object
-  //          api/post/delete.php       -   to instantiate blog post object
-  //
-  //
-  //
-  //  It handles the CRUD functionality: create, read-all, read-single, update, and delete.
-  //
-  //
-  //       class Post {
-  //         ...
-  //
-  //        public function __construct($db){ }
-  //
-  //        public function read(){ }
-  //
-  //        public function read_single(){ }
-  //
-  //        public function create(){ }
-  //
-  //        public function update() { }
-  //
-  //        public function delete(){ }
-  //      }
-  //
-  //
-  //////////////////////////////////////////////////////////////////////////////
-
-
   class Post {
-    //DB stuff
+    //Database properties
     private $conn;
     private $table = 'posts';
 
@@ -94,7 +57,6 @@
     /* ============================
     read_single() - Get Single Post
     ============================ */
-    //@00:00 (Part 2)
 
 
     public function read_single(){
@@ -131,7 +93,6 @@
     /* ============================
         create() - Create Post
     ============================ */
-    //@10:15 (Part 2)
 
 
     public function create(){
@@ -169,7 +130,6 @@
     /* ============================
           update() - Update Post
     ============================ */
-    //@00:00 (Part 3)
 
 
     public function update() {
@@ -212,7 +172,6 @@
     /* ============================
         delete() - Delete Post
     ============================ */
-    //@05:10 (Part 3)
 
 
     public function delete(){
@@ -231,6 +190,4 @@
 
       return false;
     }
-
-
   } //End of class Post

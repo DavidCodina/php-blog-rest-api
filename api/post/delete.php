@@ -1,24 +1,4 @@
 <?php
-  //////////////////////////////////////////////////////////////////////////////
-  //
-  //  Tested in Postman in video 3 @08:08 using the following URL:
-  //  http://localhost/php_rest_myblog/api/post/delete.php
-  //  We specify the method in Postman as DELETE.
-  //  Then in the 'Headers' tab we specify: Content-Type as application/json
-  //
-  //  In the 'Body' Tab of Postman we choose 'raw'
-  //
-  //  Then we input this:
-  //
-  // { "id" : "7" }
-  //
-  //  Upon sending in Postman we get back: { "message": "Post Deleted" }
-  //  And if we look at the myblog database, we will see the added post.
-  //
-  //
-  //////////////////////////////////////////////////////////////////////////////
-
-
   //Headers
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
@@ -35,8 +15,6 @@
   $post     = new Post($db);                                 //Instantiate blog post object
   $data     = json_decode(file_get_contents("php://input")); //Get raw posted data
 
-
-  //Set ID to update
   $post->id = $data->id;
 
 

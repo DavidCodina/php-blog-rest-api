@@ -1,13 +1,14 @@
 <?php
   class Category {
-    //DB Stuff
+    //Database Properties
     private $conn;
     private $table = 'categories';
 
-    //Properties
+    //Category Properties
     public $id;
     public $name;
     public $created_at;
+
 
     /* ============================
           Constructor
@@ -48,7 +49,7 @@
 
 
     public function read_single(){
-      // Create the query
+      //Create the query
       $query = 'SELECT
                id,
                name

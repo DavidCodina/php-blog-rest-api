@@ -1,28 +1,4 @@
 <?php
-  //////////////////////////////////////////////////////////////////////////////
-  //
-  //
-  //  Tested in Postman in video 2 @22:30 using a POST request, and the following URL:
-  //  http://localhost/php_rest_myblog/api/post/create.php
-  //  Then in headers we specify the Content-Type as application/json
-  //  In the 'Body' Tab of Postman we choose 'raw'
-  //
-  //  Then we input this:
-  //
-  //    {
-  //      "title"       : "My Tech Post",
-  //      "body"        : "This is a test...",
-  //      "author"      : "David Codina",
-  //      "category_id" : "1"
-  //    }
-  //
-  //
-  //  Upon sending in Postman we get back: { "message": "Post Created" }
-  //  And if we look at the myblog database, we will see the added post.
-  //
-  //////////////////////////////////////////////////////////////////////////////
-
-
   //Headers
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');

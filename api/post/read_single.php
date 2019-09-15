@@ -1,8 +1,4 @@
 <?php
-  //Tested @9:55 (video 2) in Postman.
-  //We used a GET request and the following URL:
-  //http://localhost/php_rest_myblog/api/post/read_single.php?id=3
-  
   //Headers
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
@@ -31,7 +27,6 @@
     'category_id'   => $post->category_id,
     'category_name' => $post->category_name
   );
-
 
 
   //Make JSON
